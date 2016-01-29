@@ -1,0 +1,17 @@
+{
+  "name": "fermat.org",
+  "version": "1.0.0",
+  "description": "fermat.org-platform",
+  "main": "viewer.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

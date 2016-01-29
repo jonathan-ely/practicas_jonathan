@@ -1,0 +1,244 @@
+html, body {
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+a {
+    color: #000000;
+}
+
+#menu {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+button:active {
+    color: #000000;
+    border: none;
+    background-color: rgba(127,127,127,0.75);
+}
+
+.backButton {
+    position : fixed;
+    top : 10px;
+    left : 10px;
+    z-index: 10;
+}
+
+#legendButton {
+    color: rgba(127,127,127,1);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position : fixed;
+    top : 10px;
+    right : 10px;
+    z-index: 15;
+}
+
+#legendButton:active {
+    color: #000000;
+    background-color: rgba(127,127,127,0.75);  
+}
+
+#legendButton:hover,.backButton:hover, .actionButton:hover  {
+    background-color: rgba(127,127,127,0.5);
+}
+
+#legend {
+    position : fixed;
+    top : 40px;
+    right : 10px;
+    z-index: 10;
+    
+}
+#div-Edit1 {
+    left: 16.5%;
+    top: 0.5%;
+    width: 63.5%;
+    height: 8%;
+    display: inline-block;
+    position:absolute; 
+}
+
+#div-Edit2 {
+    left: 23.5%;
+    top: 1.8%;
+    display: inline-block;
+    width: 42%;
+    height: 6%;
+    position:absolute;
+}
+
+.edit-Fermat {
+    color: rgba(127,127,127,1);
+}
+
+#select-layer {
+    width:18.3%;
+}
+.backButton, .actionButton, #legend {
+    color: rgba(127,127,127,1);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+.colorBox {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #ccc;
+    position: relative;
+}
+
+.flipbook-viewport{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:auto;
+}
+
+
+.flipbook{
+    -webkit-transition: -webkit-transform 3s;
+    -moz-transition: -moz-transform 3s;
+    -ms-transition: -ms-transform 3s;
+    -o-transition: -o-transform 3s;
+    transition: transform 3s;
+}
+
+
+.flipbook .shadow{
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
+
+    -webkit-box-shadow:0 0 10px #999;
+    -moz-box-shadow:0 0 10px #999;
+    -ms-box-shadow:0 0 10px #999;
+    -o-box-shadow:0 0 10px #999;
+    box-shadow:0 0 10px #999;
+}
+
+.flipbook .page{
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+    -ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+    -o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.flipbook .hard{
+    background-color:white;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -ms-box-shadow:none;
+    box-shadow:none;
+}
+#p1, #p2, #pn, #pf{
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.flipbook .own-size{
+    background-color:white;
+    overflow:hidden;
+}
+
+.flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
+    background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+    background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
+    background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
+    background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
+    background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+
+.table-contents{
+    margin:0px auto;
+    width:100%;
+    padding: 0px;
+    position: relative;
+    left:0px;
+}
+
+#contents1, #contents2{
+    position:absolute;
+    left:45%;
+    color:black;
+    float:top;
+    padding: 0px;
+    margin: 0px;
+}
+
+.table-contents ul{
+    padding-top:12%;
+}
+.table-contents li{
+    list-style:none;
+    left:50%;
+}
+
+.table-contents span{
+	float:right;
+}
+
+.table-contents a{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:0px auto;
+}
+
+.table-contents a:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+@font-face {
+    font-family: Canaro;
+    src: url('fonts/canaro.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
